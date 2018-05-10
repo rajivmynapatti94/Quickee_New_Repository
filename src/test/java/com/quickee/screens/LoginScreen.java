@@ -14,6 +14,9 @@ public class LoginScreen extends SharedDriver{
 	private String autoTestEmailUsername = "shivani.gor@indianic.com";
 	private String autoTestEmailPassword = "test123";
 	
+	private String autoTestEmailUsername1 = "test2222@gmail.com";
+	private String autoTestEmailPassword1= "test123";
+	
 	
 	@iOSFindBy(id="Back Icon")
 	private MobileElement backButton;
@@ -60,7 +63,8 @@ public class LoginScreen extends SharedDriver{
 	
 	public String getAutoTestEmailUsername(){ return autoTestEmailUsername; }
 	public String getAutoTestEmailPassword(){ return autoTestEmailPassword; }
-	
+	public String getAutoTestInvalidEmailUsername() {return autoTestEmailUsername1 ;}
+	public String getAutoTestInvalidEmailPassword(){ return autoTestEmailPassword1; }
 	
 	public void isLoginPageDisplayed(){
 		
@@ -78,6 +82,18 @@ public class LoginScreen extends SharedDriver{
 		sendKeys(emailPassword, password); 
 		
 	}
+	
+	public void enterInvalidEmail(String emailAddress) {
+		
+		sendKeys(emailAddress, email);
+	}
+	
+public void enterInvalidPassword(String emailPassword){
+		
+		sendKeys(emailPassword, password); 
+		
+	}
+	
 	
 	public void clickSignInButton(){ 
 		

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.quickee.steps.RunCuke" class="method navigator-link" hash-for-method="feature(Acceptance Testing is check Login and Logout functionality is working fine)">feature(Acceptance Testing is check Login and Logout functionality is working fine)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.quickee.steps.RunCuke" class="method navigator-link" hash-for-method="feature(Acceptance Testing is check upload profile picture functioanlity is working fine)">feature(Acceptance Testing is check upload profile picture functioanlity is working fine)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.quickee.steps.RunCuke</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -134,82 +129,16 @@
                   </a> <!-- feature(Acceptance Testing is check Login and Logout functionality is working fine) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(Acceptance Testing is check Login and Logout functionality is working fine)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.xpath: (//XCUIElementTypeOther[@name=&quot;TabBarItem_AccessibilityLabel&quot;])[4]&quot; 
-- html content: &quot;by id or name &quot;profile&quot;&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;ind351.local&apos;, ip: &apos;10.2.4.157&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: SharedDriver
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.xpath: (//XCUIElementTypeOther[@name=&quot;TabBarItem_AccessibilityLabel&quot;])[4]&quot; 
-- html content: &quot;by id or name &quot;profile&quot;&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;ind351.local&apos;, ip: &apos;10.2.4.157&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: SharedDriver
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$184e91dc.toString(&lt;generated&gt;)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:135)
-	at com.quickee.driver.SharedDriver.waitUntilClickable(SharedDriver.java:162)
-	at com.quickee.driver.SharedDriver.click(SharedDriver.java:78)
-	at com.quickee.screens.LatestQuickeesScreen.clickProfileTab(LatestQuickeesScreen.java:55)
-	at com.quickee.steps.LoginSteps.goToProfile(LoginSteps.java:57)
-	at ✽.And Click on Profile link from Latest Quickees Screen(Login.feature:13)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(Acceptance Testing is check upload profile picture functioanlity is working fine)">
-                  </a> <!-- feature(Acceptance Testing is check upload profile picture functioanlity is working fine) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Acceptance Testing is check upload profile picture functioanlity is working fine)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.id: Login&quot; 
-- html content: &quot;by id or name &quot;login&quot;&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;ind351.local&apos;, ip: &apos;10.2.4.157&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: SharedDriver
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.id: Login&quot; 
-- html content: &quot;by id or name &quot;login&quot;&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;ind351.local&apos;, ip: &apos;10.2.4.157&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: SharedDriver
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$184e91dc.toString(&lt;generated&gt;)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:135)
-	at com.quickee.driver.SharedDriver.waitUntilClickable(SharedDriver.java:162)
-	at com.quickee.driver.SharedDriver.click(SharedDriver.java:78)
-	at com.quickee.screens.GetStartedScreen.goToLoginScreen(GetStartedScreen.java:50)
-	at com.quickee.steps.LoginSteps.goToLoginScreen(LoginSteps.java:35)
-	at ✽.Given Click on Login link on Get Started Screen(SelectProfilePicture.feature:10)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/indianic/Cucumber_POM_Framework/src/test/resources/runner/testng.xml</span>
+            <span class="header-content">/Users/indianic/Quickee_New_Repository/src/test/resources/runner/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -266,20 +195,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.quickee.steps.RunCuke')
-data.setCell(0, 3, 97687);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'feature')
-data.setCell(1, 2, 'com.quickee.steps.RunCuke')
-data.setCell(1, 3, 23301);
+data.setCell(0, 3, 375068);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -312,27 +237,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">636 ms</span>
+                <span class="method-start">648 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">feature(Acceptance Testing is check Login and Logout functionality is working fine)</span>
-                <span class="method-start">1468 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">feature(Acceptance Testing is check upload profile picture functioanlity is working fine)</span>
-                <span class="method-start">99223 ms</span>
+                <span class="method-start">1503 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">sendmail</span>
-                <span class="method-start">122526 ms</span>
+                <span class="method-start">376573 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">124867 ms</span>
+                <span class="method-start">518591 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

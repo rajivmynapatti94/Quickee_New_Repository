@@ -15,7 +15,7 @@ public class TestMailFormat {
 		
 		MonitoringMail MM= new MonitoringMail();
 		
-		//MM.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, TestConfig.messageBody, TestConfig.attachmentPath, TestConfig.attachmentName);
+		MM.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, TestConfig.messageBody, TestConfig.attachmentPath, TestConfig.attachmentName);
 		String messageBody = "http://"+InetAddress.getLocalHost().getHostAddress();
 		System.out.println(messageBody);
 	}

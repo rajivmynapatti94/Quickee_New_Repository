@@ -15,12 +15,13 @@ import com.cucumber.listener.ExtentCucumberFormatter;
 
 import Utils.MonitoringMail;
 import Utils.TestConfig;
+import Utils.TestUtils;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(plugin = {"json:target/RunCuke/cucumber.json", "pretty", "html:target/RunCuke/cucumber.html","com.cucumber.listener.ExtentCucumberFormatter"},
-		features="src/test/resources/FeatureFiles", monochrome=false
-		//tags={"@LoginwithValidUser","@ProfilePicture-Gallery"}
+		features="src/test/resources/FeatureFiles", monochrome=false,
+		tags={"@LoginwithInValidUser"}
 		)
 
 public class RunCuke extends AbstractTestNGCucumberTests{
@@ -56,6 +57,8 @@ public class RunCuke extends AbstractTestNGCucumberTests{
 	
 	@AfterClass
 	public void sendmail() throws AddressException, MessagingException{
+		
+		TestUtils.zip();
 		
 		MonitoringMail mail = new MonitoringMail();
 		
